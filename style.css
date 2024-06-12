@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    font-family: "Exo 2", sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.logoHead img {
+    height: 120px;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.headline {
+    margin-right: 32px;
+}
+
+.headline a {
+    text-decoration: none;
+    color: #8200ff;
+}
+.horizontalLine {
+    height: 1px;
+    background-color: lightgrey;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.noteCreateBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 32px;
+    margin-right: 32px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.inputFields {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.inputFields input {
+    font-size: 18px;
+    padding: 8px;
+    padding-right: 320px;
+    border: none;
+}
+
+.button {
+    margin-right: 24px;
+}
+
+#content {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    margin-left: 32px;
+    margin-right: 32px;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.contentbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: white;
+    overflow: hidden;
+    width: 240px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.titleContent {
+    font-size: 24px;
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+
+}
+.noteContent {
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 200px;
+}
+
+#deleteItem {
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+#pinImage1 img {
+    margin-right: 40px;
+    cursor: pointer;
+    height: 36px;
+}
+#pinImage2 {
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    height: 36px;
+}
+#pinImage2 img {
+    height: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    height: 36px;
+}
+
+#trashImg {
+    width: 240px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+#trashImg img {
+    height: 36px;
+}
+
+
+footer {
+    margin-top: 120px;
+    display: flex;
+    background-color: white;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    gap: 16px;
+}
+footer a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+.impressumContainer {
+    margin-left: 160px;
+}
+
+/* CONTACT */
+
+.contactContainer {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.contactFormular {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactFormular h1 {
+    margin-top: 40px;
+    margin-left: 120px;
+    margin-right: 120px;   
+}
+.contactInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nameEmail {
+    height: 32px;
+    width: 320px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Raleway", sans-serif;;
+    font-size: 16px;
+}
+
+.buttonContact {
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    width: 320px;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #8200ff;
+    color: white;
+
+}
+.buttonContact:hover {
+    background-color: #9a2dff;
+}
+
+#message {
+    font-family: "Exo 2", sans-serif;;
+    font-size: 16px;
+    height: 160px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 4px;
+}
+
+
+
+
+@media (max-width: 740px) {
+    #pinImage1 img {
+        margin-right: 0;
+    }
+    .noteCreateBox {
+        flex-direction: column;
+    }
+    #pinImage1 {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    #pinImage2 {
+        margin-bottom: 16px;
+    }
+    .inputFields {
+        margin-left: 0;
+    }
+
+}
+@media (max-width: 600px) {
+    .logoHead img {
+        margin-left: 8px;
+    }
+    .headline {
+        margin-right: 8px;
+    }
+    .inputFields input {
+        padding-right: 120px;
+    }
+    .impressumContainer {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 640px) {
+    .inputFields input {
+        padding-right: 120px;
+    }
+}
+@media (max-width: 440px) {
+    header {
+        flex-direction: column;
+    }
+    .headline {
+        margin-bottom: 56px;
+    }
+    .horizontalLine {
+        display: none;
+    }
+    .inputFields input {
+        padding-right: 60px;
+    }
+    header {
+        margin-bottom: 40px;
+    }
+    .logoHead img {
+        margin-left: 0;
+    }
+}
+@media (min-width: 1024px) {
+    .logoHead img {
+        margin-left: 160px;
+    }
+    .headline {
+        margin-right: 160px;
+    }
+    .noteCreateBox {
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+    #content {
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+}
+@media (max-width: 380px) {
+    .inputFields input {
+        padding-right: 32px;
+    }
+}

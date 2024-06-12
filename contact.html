@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>NoteBook</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div class="logoHead"><a href="index.html"><img src="./img/LogoMakr-WebSolutions.png" alt=""></a></div>
+            <div class="headline">
+              <a href="index.html"><h1>ToDo Liste
+              </h1></a>
+            </div> 
+        </header>
+            <div class="contactContainer">
+                <div class="contactFormular">
+                  <h1>Kontakt</h1>
+                  <p>Kontaktieren Sie uns gerne!</p>
+                  <div class="contactInputs">
+                    <input
+                      class="nameEmail"
+                      minlength="3"
+                      maxlength="25"
+                      type="text"
+                      id="name"
+                      placeholder="Ihr Name"
+                    />
+                    <input
+                      class="nameEmail"
+                      type="email"
+                      id="email"
+                      placeholder="Ihre Emailadresse"
+                    />
+                    <textarea
+                      minlength="5"
+                      maxlength="250"
+                      name="message"
+                      id="message"
+                      placeholder="Ihre Nachricht"
+                    ></textarea>
+                  </div>
+                  <button onclick="contactAsk()" class="greenButton buttonContact">
+                    Nachricht absenden
+                  </button>
+                </div>
+              </div>
+    </div> 
+    <footer>
+        <a href="impressum.html">Impressum</a> |
+        <a href="#">Kontakt</a>
+    </footer>
+</body>
+</html>
+

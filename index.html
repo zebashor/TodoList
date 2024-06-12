@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>NoteBook</title>
+</head>
+<body onload="render()">
+    <div class="main">
+        <header>
+            <div class="logoHead"><a href="index.html"><img src="./img/LogoMakr-WebSolutions.png" alt=""></a></div>
+            <div class="headline">
+                <a href="index.html"><h1>ToDo Liste
+                </h1></a>
+            </div> 
+        </header>
+            <div class="horizontalLine"></div>
+        <div class="noteCreateBox">
+            <div class="inputFields">        
+                <input type="text" placeholder="Titel eintragen..." id="title" maxlength="20">
+                <input type="text" placeholder="Notiz schreiben..." id="note" maxlength="120">
+            </div>
+            <div id="pinImage1"><img src="./img/thumbtacks.png" alt="" onclick="addNote()"></div>
+        </div>
+    
+        <div id="content"></div>
+    </div> 
+    <footer>
+        <a href="impressum.html">Impressum</a> |
+        <a href="contact.html">Kontakt</a>
+    </footer>
+</body>
+</html>
+
